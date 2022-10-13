@@ -1,0 +1,26 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 table-responsive">
+            <table class="table ">
+                <thead class="bg-dark text-white">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Friend's name</th>
+                        <th scope="col">Friend's nickname</th>
+                        <th scope="col">Description about the friend</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let i of friendsData">
+                        <td class=".text-break ">{{i.name}}</td>
+                        <td class=".text-break ">{{i.friendName}}</td>
+                        <td class=".text-break ">{{i.friendNickName}}</td>
+                        <td class=".text-break ">{{i.DescribeYourFriend}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
