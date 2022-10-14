@@ -12,10 +12,13 @@ export class ViewFriendsComponent implements OnInit {
     this.putFriendsData()
   }
 
+  status:boolean = false
+
   putFriendsData=()=>{
     this.myApi.getFriendsData().subscribe(
       (data)=>{
         this.friendsData = data
+        this.status = true
       }
     )
   }
